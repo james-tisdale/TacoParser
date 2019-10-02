@@ -12,10 +12,21 @@ namespace LoggingKata.Test
         }
 
         [Theory]
-        [InlineData("Example")]
+        [InlineData("34.018008,-86.079099,Taco Bell Attall...")]
+        [InlineData("33.470013,-86.816966,Taco Bell Birmingham...")]
+        [InlineData("34.784434,-84.771556,Taco Bell Chatswort...")]
         public void ShouldParse(string str)
         {
             // TODO: Complete Should Parse
+
+            //Arrange
+            TacoParserTests tacotest = new TacoParserTests();
+
+            // Act
+            double actual = tacotest.ShouldParse(str);
+
+            // Assert
+            Assert.Equal(actual, expected: );
         }
 
         [Theory]
