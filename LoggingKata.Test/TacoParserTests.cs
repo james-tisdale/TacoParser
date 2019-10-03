@@ -12,9 +12,9 @@ namespace LoggingKata.Test
         }
 
         [Theory]
-        [InlineData("34.018008,-86.079099,Taco Bell Attall...")]
-        [InlineData("33.470013,-86.816966,Taco Bell Birmingham...")]
-        [InlineData("34.784434,-84.771556,Taco Bell Chatswort...")]
+        [InlineData("example")]
+        [InlineData("example")]
+        [InlineData("example")]
         public void ShouldParse(string str)
         {
             // TODO: Complete Should Parse
